@@ -1,1 +1,22 @@
 /*Main CSS*/
+/*div  {
+  display: none;
+}*/
+div#green_circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #2ECC71;
+}
+div#orange_circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #EC7E22;
+}
+div#blue_circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #3498DB;
+}
