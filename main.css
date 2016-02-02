@@ -1,22 +1,37 @@
 /*Main CSS*/
-div  {
-  display: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-div#green_circle {
+div.main-container {
+  background-color: #bdc3c7;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+h1 {
+  color: #FFFFFF;
+}
+p.cursive {
+  font-family: Courier, monospace;
+}
+div .circle {
+  border-radius: 100%;
+  display: none;
+  text-align: center;
+  color: #FFFFFF;
+}
+div#green_circ {
   width: 150px;
   height: 150px;
-  border-radius: 100%;
   background-color: #2ECC71;
 }
-div#orange_circle {
+div#orange_circ {
     height: 100px;
     width: 100px;
-    border-radius: 100%;
     background-color: #EC7E22;
 }
-div#blue_circle {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
+div#blue_circ {
+  height: 75px;
+  width: 75px;
   background-color: #3498DB;
 }
