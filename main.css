@@ -15,7 +15,6 @@ p.cursive {
 }
 section {
   padding: 20px;
-  margin-bottom: 40px;
 }
 .white-bkg {
   background-color: #FFFFFF;
@@ -45,6 +44,13 @@ div#blue_circ {
   background-color: transparent;
   height: 200px;
   margin-left: 20%;
+}
+section.dark-room {
+background-color: #000000;
+}
+img.eyes-dark {
+  display: inline;
+  height: 300px;
 }
 div.switch-frame {
   background-color: #ecf0f1;
