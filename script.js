@@ -7,14 +7,22 @@ $(document).ready(function(){
   $('#blue_circ').fadeIn(10000);
   $('div.circle').css('display', 'inline-block');
 // Ninja disappear
-  $('img#ninja').mouseenter(function(){
+  var $ninja = $('img#ninja');
+  $ninja.mouseenter(function(){
     $(this).fadeTo(0, 0);
   });
-  $('img#ninja').mouseleave(function(){
+  $ninja.mouseleave(function(){
     $(this).fadeTo(1000, 1);
   });
   //  Light switch
-  $('div.switch p').on('click', function(){
+  var $lights = $('div.switch p');
+  $lights.on('click', function(){
     $(this).html() == 'ON' ? $(this).html('OFF') : $(this).html('ON');
+  });
+  $lights.on('click', function(){
+    $('section.dark-room').toggleClass('dark-room, light-room');
+  });
+  $lights.on('click', function(){
+    $('.bug').toggleClass('bug-off, bug-on');
   });
 });

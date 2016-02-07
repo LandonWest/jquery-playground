@@ -15,6 +15,7 @@ p.cursive {
 }
 section {
   padding: 20px;
+  height: 300px;
 }
 .white-bkg {
   background-color: #FFFFFF;
@@ -46,17 +47,28 @@ div#blue_circ {
   margin-left: 20%;
 }
 section.dark-room {
-background-color: #000000;
+  background-color: #000000;
+}
+section.light-room {
+  background-color: #FFFFFF;
 }
 img.eyes-dark {
+  height: 50px;
+  margin-left: 200px;
+}
+img.bug-off {
+  display: none;
+  height: 200px;
+}
+img.bug-on {
   display: inline;
-  height: 300px;
+  height: 200px;
 }
 div.switch-frame {
+  display: inline-block;
   background-color: #ecf0f1;
   height: 80px;
   width: 40px;
-
 }
 div.switch {
   position: absolute;
