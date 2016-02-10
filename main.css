@@ -52,17 +52,9 @@ section.dark-room {
 section.light-room {
   background-color: #FFFFFF;
 }
-img.eyes-dark {
+img.eyes {
   height: 50px;
   margin-left: 200px;
-}
-img.bug-off {
-  display: none;
-  height: 200px;
-}
-img.bug-on {
-  display: inline;
-  height: 200px;
 }
 div.switch-frame {
   display: inline-block;

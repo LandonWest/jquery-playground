@@ -23,6 +23,8 @@ $(document).ready(function(){
     $('section.dark-room').toggleClass('dark-room, light-room');
   });
   $lights.on('click', function(){
-    $('.bug').toggleClass('bug-off, bug-on');
+    if ($lights.html() == 'OFF') {
+      $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
+    } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
   });
 });
