@@ -14,6 +14,10 @@ $(document).ready(function(){
   $ninja.mouseleave(function(){
     $(this).fadeTo(1000, 1);
   });
+  //  Pull Tab
+  $('.pull-me').click(function(){
+    $('.panel').slideToggle('slow');
+  });
   //  Light switch
   var $lights = $('div.switch p');
   $lights.on('click', function(){
