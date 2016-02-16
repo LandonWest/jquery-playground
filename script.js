@@ -31,11 +31,33 @@ $(document).ready(function(){
       $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
     } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
   });
+  // To Do List
   $('#todo-btn').click(function(){
     var toAdd = $('input[name=checklist-item]').val();
     $('.list').append("<div class='item'>" + toAdd + "</div>");
   });
   $(document).on('click', '.item', function(){
     $(this).remove();
+  });
+  // Move the Turtle
+  $(document).keydown(function(key) {
+    switch(parseInt(key.which,10)) {
+      // Left Arrow Pressed
+      case 37:
+        $('#turtle').animate({left: "-=10px"}, 'fast');
+        break;
+      // Up Arrow Pressed
+      case 38:
+        $('#turtle').animate({top: "-=10px"}, 'fast');
+        break;
+      // Right Arrow Pressed
+      case 39:
+        $('#turtle').animate({left: "+=10px"}, 'fast');
+        break;
+      // Down Arrow Pressed
+      case 40:
+        $('#turtle').animate({top: "+=10px"}, 'fast');
+        break;
+    }
   });
 });
