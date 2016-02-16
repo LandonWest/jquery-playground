@@ -31,4 +31,8 @@ $(document).ready(function(){
       $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
     } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
   });
+  $('#todo-btn').click(function(){
+    var toAdd = $('input[name=checklist-item]').val();
+    $('.list').append("<div class='item'>" + toAdd + "</div>");
+  });
 });
