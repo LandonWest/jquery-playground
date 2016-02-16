@@ -27,14 +27,14 @@ $(document).ready(function(){
     $('section.dark-room').toggleClass('dark-room, light-room');
   });
   $lights.on('click', function(){
-    if ($lights.html() == 'OFF') {
+    if ($lights.html() == 'ON') {
       $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
     } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
   });
   // To Do List
   $('#todo-btn').click(function(){
     var toAdd = $('input[name=checklist-item]').val();
-    $('.list').append("<div class='item'>" + toAdd + "</div>");
+    $('.list').append("<li class='item'>" + toAdd + "</li>");
   });
   $(document).on('click', '.item', function(){
     $(this).remove();
