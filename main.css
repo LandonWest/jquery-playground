@@ -180,3 +180,26 @@ button:active
 	-webkit-animation: none;
 	animation: none;
 }
+div.list:hover {
+  cursor: pointer;
+}
+/* Move the Turtle (Escape!)*/
+#mario {
+  background-image: url('img/mariobackground.jpg');
+}
+section#mario h2 {
+  margin-top: 80px;
+}
+div.playing-field {
+  margin-top: 116px;
+}
+#turtle {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100px;
+}
+#flag {
+  height: 100px;
+  float: right;
+}
