@@ -216,3 +216,17 @@ div.playing-field {
   height: 100px;
   float: right;
 }
+/* exploding death star*/
+.death-star {
+  height: 200px;
+  width: 200px;
+  margin: 50px auto;
+  background-color: grey;
+  border-radius: 100%;
+}
+.death-star p {
+  text-align: center;
+  padding: 80px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
