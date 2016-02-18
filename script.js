@@ -40,7 +40,7 @@ $(document).ready(function(){
     $(this).remove();
   });
   // Move the Turtle
-  $(document).keydown(function(key) {
+  $(document).keydown(function(key){
     switch(parseInt(key.which,10)) {
       // Left Arrow Pressed
       case 37:
@@ -59,5 +59,8 @@ $(document).ready(function(){
         $('#turtle').animate({top: "+=40px"}, 'fast');
         break;
     }
+  });
+  $('.death-star').click(function(){
+    $(this).effect('explode', {pieces: 36});
   });
 });
