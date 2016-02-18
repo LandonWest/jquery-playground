@@ -44,19 +44,19 @@ $(document).ready(function(){
     switch(parseInt(key.which,10)) {
       // Left Arrow Pressed
       case 37:
-        $('#turtle').animate({left: "-=10px"}, 'fast');
+        $('#turtle').animate({left: "-=40px"}, 'fast');
         break;
       // Up Arrow Pressed
       case 38:
-        $('#turtle').animate({top: "-=10px"}, 'fast');
+        $('#turtle').animate({top: "-=40px"}, 'fast');
         break;
       // Right Arrow Pressed
       case 39:
-        $('#turtle').animate({left: "+=10px"}, 'fast');
+        $('#turtle').animate({left: "+=40px"}, 'fast');
         break;
       // Down Arrow Pressed
       case 40:
-        $('#turtle').animate({top: "+=10px"}, 'fast');
+        $('#turtle').animate({top: "+=40px"}, 'fast');
         break;
     }
   });
