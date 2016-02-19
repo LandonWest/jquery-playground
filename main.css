@@ -217,16 +217,21 @@ div.playing-field {
   float: right;
 }
 /* exploding death star*/
-.death-star {
+#galaxy {
+  background-image: url('img/stars.jpg');
+}
+#death-star {
+  position: relative;
+  top: 10%;
+  left: 60%;
+  display: inline;
   height: 200px;
   width: 200px;
-  margin: 50px auto;
-  background-color: grey;
-  border-radius: 100%;
+
 }
-.death-star p {
-  text-align: center;
-  padding: 80px;
-  color: #FFFFFF;
-  font-weight: bold;
+#xwing {
+  position: absolute;
+  left: 10%;
+  height: 100px;
+  cursor: pointer;
 }

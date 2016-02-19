@@ -60,7 +60,7 @@ $(document).ready(function(){
         break;
     }
   });
-  $('.death-star').click(function(){
-    $(this).effect('explode', {pieces: 36});
+  $('#xwing').click(function(){
+    $('#death-star').effect('explode', {pieces: 36});
   });
 });
