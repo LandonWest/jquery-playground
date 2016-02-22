@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('#orange_circ').fadeIn(6000);
   $('#blue_circ').fadeIn(10000);
   $('div.circle').css('display', 'inline-block');
+
 // Ninja disappear
   var $ninja = $('img#ninja');
   $ninja.mouseenter(function(){
@@ -14,10 +15,12 @@ $(document).ready(function(){
   $ninja.mouseleave(function(){
     $(this).fadeTo(1000, 1);
   });
+
   //  Pull Tab
   $('.pull-me').click(function(){
     $('.panel').slideToggle('slow');
   });
+
   //  Light switch
   var $lights = $('div.switch p');
   $lights.on('click', function(){
@@ -31,6 +34,7 @@ $(document).ready(function(){
       $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
     } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
   });
+
   // To Do List
   $('#todo-btn').click(function(){
     var toAdd = $('input[name=checklist-item]').val();
@@ -39,6 +43,7 @@ $(document).ready(function(){
   $(document).on('click', '.item', function(){
     $(this).remove();
   });
+
   // Move the Turtle
   $(document).keydown(function(key){
     switch(parseInt(key.which,10)) {
@@ -60,7 +65,11 @@ $(document).ready(function(){
         break;
     }
   });
+
+// Kill the Death Star
   $('#xwing').click(function(){
-    $('#death-star').effect('explode', {pieces: 36});
-  });
+    $('#death-star').effect('explode', {pieces: 36})
+    $('#laser').animate({left: "+=1600px"}, 'fast');
+  })
+
 });

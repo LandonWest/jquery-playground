@@ -198,7 +198,7 @@ p.small-i {
 }
 /* Move the Turtle (Escape!)*/
 #mario {
-  background-image: url('img/mariobackground.jpg');
+  background: #059EDA url('img/mariobackground.jpg');
 }
 section#mario h2 {
   margin-top: 80px;
@@ -218,20 +218,29 @@ div.playing-field {
 }
 /* exploding death star*/
 #galaxy {
-  background-image: url('img/stars.jpg');
+  background: #000000 url('img/stars.jpg');
 }
 #death-star {
-  position: relative;
-  top: 10%;
-  left: 60%;
-  display: inline;
+  display: inline-block;
+  margin-top: 50px;
+  float: right;
   height: 200px;
   width: 200px;
 
 }
 #xwing {
-  position: absolute;
-  left: 10%;
+  display: inline-block;
   height: 100px;
+  margin: 80px 0 60px 60px;
   cursor: pointer;
+}
+#laser {
+  display: inline;
+  position: relative;
+  top: -70px;
+  left: -90px;
+  width: 44px;
+  height: 18px;
+  color: red;
+  font-weight: bold;
 }
