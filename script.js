@@ -69,7 +69,19 @@ $(document).ready(function(){
 // Kill the Death Star
   $('#xwing').click(function(){
     $('#death-star').effect('explode', {pieces: 36})
-    $('#laser').animate({left: "+=1600px"}, 'fast');
+    $('#laser').animate({left: "1600px"}, 'fast');
   })
 
+// Slide in circle nav menu
+  $('.btn-group').hover(
+    function() {
+      $(this).append( $("<span>Click here to see our team!</span>") );
+    }, function() {
+      $(this).find("span:last").remove();
+    }
+  );
+
+  $('.btn-group').click(function() {
+    $('.effect').toggle('slide', 'slow');
+  });
 });
