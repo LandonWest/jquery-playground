@@ -251,6 +251,9 @@ div.playing-field {
   font-weight: bold;
 }
 /* Slide-in circle navigation */
+#slide-nav {
+  height: 375px;
+}
 .btn-group {
   position: relative;
   margin-bottom: 100px;
@@ -287,6 +290,9 @@ div.playing-field {
   top: 42px;
   left: 50px;
   color: #fff;
+}
+.effect {
+  display: none;
 }
 #circ-one, #circ-two, #circ-three, #circ-four {
   position: absolute;
