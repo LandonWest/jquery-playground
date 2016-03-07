@@ -17,8 +17,14 @@ section {
   padding: 20px;
   height: 300px;
 }
+ul li {
+  list-style: none;
+}
 .white-bkg {
   background-color: #FFFFFF;
+}
+.left {
+  float: left;
 }
 div .circle {
   border-radius: 100%;
@@ -243,4 +249,64 @@ div.playing-field {
   height: 18px;
   color: red;
   font-weight: bold;
+}
+/* Slide-in circle navigation */
+.btn-group {
+  position: relative;
+  margin-bottom: 100px;
+}
+.btn-group span {
+  position: absolute;
+  top: 15px;
+}
+#team-btn {
+  margin-right: 10px;
+}
+#team-btn:hover {
+  cursor: pointer;
+  width: 51px;
+  height: 51px;
+}
+.pic-list ul {
+  padding-left: 0;
+}
+.pic-list ul li {
+  float: left;
+}
+.circly {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+}
+.circ-text {
+  position: absolute;
+  width: 50%;
+  top: 42px;
+  left: 50px;
+  color: #fff;
+}
+#circ-one, #circ-two, #circ-three, #circ-four {
+  position: absolute;
+}
+#circ-one {
+  z-index: 1;
+  background-color: #4CC3D9;
+}
+#circ-two {
+  z-index: 2;
+  margin-left: 155px;
+  background-color: #7BC8A4;
+}
+#circ-three {
+  z-index: 3;
+  margin-left: 310px;
+  background-color: #FFC65D;
+}
+#circ-four {
+  z-index: 4;
+  margin-left: 456px;
+  background-color: #F16745;
 }
