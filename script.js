@@ -73,7 +73,7 @@ $(document).ready(function(){
   })
 
 // Slide in circle nav menu
-  $('.btn-group').hover(
+  $('.person-icon').hover(
     function() {
       $(this).append( $("<span>Click here to see our team!</span>") );
     }, function() {
@@ -81,7 +81,7 @@ $(document).ready(function(){
     }
   );
 
-  $('.btn-group').click(function() {
+  $('.person-icon').click(function() {
     $('.effect').toggle('slide', 'slow');
   });
 });

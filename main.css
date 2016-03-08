@@ -26,6 +26,9 @@ ul li {
 .left {
   float: left;
 }
+#ninja-sect {
+  cursor: crosshair;
+}
 div .circle {
   border-radius: 100%;
   display: none;
@@ -252,23 +255,34 @@ div.playing-field {
 }
 /* Slide-in circle navigation */
 #slide-nav {
-  height: 375px;
+  height: 350px;
 }
 .btn-group {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .btn-group span {
   position: absolute;
   top: 15px;
+  left: 60px;
+  color: #fff;
+}
+.person-icon {
+  background: url('img/person-icon-sprite-1x.png');
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.person-icon:hover {
+  background-position: -50px 0;
+  cursor: pointer;
 }
 #team-btn {
   margin-right: 10px;
 }
 #team-btn:hover {
   cursor: pointer;
-  width: 51px;
-  height: 51px;
+
 }
 .pic-list ul {
   padding-left: 0;
