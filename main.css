@@ -92,6 +92,15 @@ section.dark-room {
 section.light-room {
   background-color: #FFFFFF;
 }
+.bug-holder-off, .bug-holder-on {
+  width: 100px;
+  height: 134px;
+  background: url('img/bug-sprite-big.png');
+  margin-left: 375px;
+}
+.bug-holder-on {
+  background-position: 100px 0;
+}
 img.eyes {
   height: 50px;
   margin-left: 200px;

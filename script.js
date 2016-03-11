@@ -30,9 +30,10 @@ $(document).ready(function(){
     $('section.dark-room').toggleClass('dark-room, light-room');
   });
   $lights.on('click', function(){
-    if ($lights.html() == 'ON') {
-      $('.bug-holder img').attr('src', 'img/cartoon-eyes.png');
-    } else { $('.bug-holder img').attr('src', 'img/bug2.jpg')};
+    $('.bug-holder-off').toggleClass('bug-holder-off, bug-holder-on');
+  });
+  $('.bug-holder-off').hover(function() {
+    $(this).toggle('blind');
   });
 
   // To Do List
